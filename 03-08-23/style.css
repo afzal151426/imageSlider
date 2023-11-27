@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(215, 215, 247);
+}
+.container{
+    /* it is relatve to mega menu */
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li{
+    padding: 30px 20px;
+    list-style: none;
+}
+nav>ul> li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.megamenu{
+    position: absolute;
+    top: 100% ;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+  min-height: 300px;
+    width: 100%;
+    /* box-shadow: 0px 10px 2px rgb(7, 171, 236); */
+    box-shadow: inset 0 0 10px #000000;
+    background: white;
+}
+nav>ul>li:hover .megamenu{
+    opacity: 1;
+    visibility: visible;
+    transition: all 2s ease ;
+}
+/* .megamenu #arrow{
+   transform: rotateY(180deg);
+   transition: all 1s ease 1;
+} */
+
+.megamenu-items ul li{
+    padding: 6px 19px;
+    list-style: none;
+}
+.megamenu-items h3{
+    padding:  8px;
+}
+.megamenu-items {
+  
+    display: flex;
+}
+
+.megamenu-items div{
+    margin: 5px 3px;
+    /* border: 1px solid red; */
+}
